@@ -343,16 +343,6 @@
                                 "successThreshold": 1,
                                 "failureThreshold": 5
                             },
-                            "resources": {
-                                "limits": {
-                                    "cpu": "500m",
-                                    "memory": "900Mi",
-                                },
-                                "requests" {
-                                    "cpu": "500m",
-                                    "memory": "900Mi",
-                                },
-                            },
                             "ports": [{
                                     "name": "jolokia",
                                     "containerPort": 8778,
@@ -575,17 +565,7 @@
                                 "periodSeconds": 10,
                                 "successThreshold": 1,
                                 "failureThreshold": 3
-                            },
-                            "resources": {
-                                "limits": {
-                                    "cpu": "200m",
-                                    "memory": "400Mi",
-                                },
-                                "requests" {
-                                    "cpu": "200m",
-                                    "memory": "400Mi",
-                                },
-                            },
+                            },                      
                             "ports": [{
                                 "containerPort": 5432,
                                 "protocol": "TCP"
